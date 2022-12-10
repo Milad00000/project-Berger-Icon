@@ -1,0 +1,102 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+
+}
+.icon {
+	background: ;
+	width: 45px;
+	height: 40px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: space-around;
+	justify-content: center;
+	margin: 100px 50px 10px;
+	padding: 8px;
+	cursor: pointer;
+}
+.icon span {
+	background: #777;
+	width: 100%;
+	height: 3px;
+}
+.links {
+	width: 100%;
+	background: #000;
+	color: #fff;
+	list-style: none;
+	text-align: center;
+	margin: 0;
+	padding-bottom: 30px;
+	display: flex;
+	flex-wrap: wrap;
+	align-items: space-around;
+	opacity: 0;
+	position: relative;
+	transition: 1s;
+	z-index:
+	
+}
+.links:before {
+	content: "";
+	position: absolute;
+	border-color: transparent transparent #000 transparent;
+	border-style: solid;
+	border-width: 10px;
+	left: 50px;
+	top: -20px;
+}
+.links li {
+	margin-top: 40px;
+	width: 100%;
+	font-size: 20px;
+	font-weight: bold;
+}
+.links li:hover {
+	color: blue;
+	transition: .5s;
+	cursor: pointer;
+}
+.links li:first-child {
+	margin-top: 80px;
+}
+.links li:last-child {
+	margin-bottom: 10px;
+}
+.close {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	background:  ;
+	margin: 20px auto;
+	text-align: center;
+	right: 20px;
+	top: 160px;
+	z-index: 1;
+	cursor: pointer;
+}
+.close::after {
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 20px;
+	background: #fff;
+	transform: skew(30deg);
+	right: 50%;
+	top: 20%;
+	transform: transition(-50% , -20%)
+}
+.close::before {
+	content: "";
+	position: absolute;
+	width: 3px;
+	height: 20px;
+	background: #fff;
+	transform: skew(-30deg);
+	right: 50%;
+	top: 20%;
+	transform: transition(-50% , -20%)
+}
